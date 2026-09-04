@@ -1,0 +1,27 @@
+# secrets
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# harness output: run ledgers + working case snapshots.
+# The recorded reference run (demo.cast) is kept as an artefact.
+/runs/*
+!/runs/.gitkeep
+!/runs/demo.cast
+
+# OpenFOAM run artefacts, should never be committed from cases/
+# (ignore written time directories -- integers >0 and any decimal time -- but
+#  keep the pristine 0/ initial-conditions directory)
+cases/**/[1-9]*/
+cases/**/[0-9]*.[0-9]*/
+cases/**/processor*/
+cases/**/postProcessing/
+cases/**/VTK/
+cases/**/constant/polyMesh/
+cases/**/log.*
+cases/**/*.foam
