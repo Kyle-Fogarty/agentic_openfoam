@@ -6,6 +6,10 @@ builds the mesh, sets the physics, runs the solver to convergence, and
 extracts the primary vortex — recovering from mesh-quality issues and
 numerical instability on its own.
 
+[![Preview of the agentic terminal interface](demo_screenshot.png)](https://agenticfoam.netlify.app/)
+
+Preview of the [agentic terminal interface](https://agenticfoam.netlify.app/).
+
 ## Quick start
 
 ```bash
