@@ -10,7 +10,10 @@ numerical instability on its own.
 
 ```bash
 pip install -e .                       # httpx, pydantic, pyyaml, rich
-echo "OPENROUTER_API_KEY=sk-or-..." > .env
+cat > .env <<'EOF'
+OPENROUTER_API_KEY=sk-or-...
+AGENTICFOAM_MODEL=google/gemma-4-31b-it   # our default
+EOF
 python -m agenticfoam.demo             # reference Re=100 run
 ```
 
